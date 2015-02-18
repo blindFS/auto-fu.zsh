@@ -1283,7 +1283,6 @@ afu-completer-init-maybe () {
     if ((${(m)#b} + 4 > COLUMNS - 1)); then
       : ${b::=%B...%b${(ml:$((COLUMNS - 4 - 3)):::::)b}}
     fi
-    _message "%B{%b $b %B}%b"
   }
   return ret
 }
